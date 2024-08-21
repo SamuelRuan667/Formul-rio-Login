@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Pixelify+Sans&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="estilo.css">
+    <script src="js/script.js"></script>
+    <title>6</title>
+
+</head>
+<body>
+    <form id="myForm">
+        <h2>Form Validation</h2>
+        <div class="form-group fullname">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="email" placeholder="Enter your full name">
+        </div>
+        <div class="form-group email">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="Enter your email address">
+        </div>
+        <div class="form-group password">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+        </div>
+        <div class="form-group gender">
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="" selected disabled>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group submit-btn">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <div id="thank-you-content" style="display: none;">
+        <h1>Thank you for filing out the form correctly.</h1>
+    </div>
+</body>
+</html>
